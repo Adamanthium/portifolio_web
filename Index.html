@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <nav class="nav">
+    <div class="profile">
+      <img src="images/foto1.jpeg" alt="Foto de perfil">
+      <h1><span>Portifolio de Paulo Lopes</span></h1>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <ul class="menu">
+      <li><a href="#home">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div>
+    <h1>Olá, eu sou <span>Paulo Lopes</span></h1>
+    <p>Desenvolvedor Web | IoT | C/C++ | Node.js</p>
+    <a href="#sobre" class="btn">Leia algo sobre mim.</a>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="about">
+  <h2>Sobre</h2>
+  <p>Desenvolvo aplicações Web Front e BackEnd,projetos de IoT incluindo o desenvolvimento eletrônico do hardware, a montagem e a programação embarcada em C e C++.</p>
+</section>
+
+<!-- PROJETOS -->
+
+<section id="projetos" class="projects">
+  <h2>Projetos</h2>
+
+  <div class="carousel"> <!-- NOVO -->
+    <button class="next">&#10095;</button>
+    <button class="prev">&#10094;</button>
+
+    <div class="project-container" id="carouselProjetos">
+    
+      <div class="project">
+        <img src="./images/IOT.jpg" alt="Projeto IoT">
+        <h3>Projeto IoT</h3>
+        <p>Monitoramento com sensores e integração com API.</p>
+      </div>
+      <div class="project">
+        <img src="./images/Software.jpg" alt="Projeto Software">
+        <h3>Sistema Web</h3>
+        <p>Aplicação completa com Node.js e banco de dados.</p>
+      </div>
+      <div class="project">
+        <img src="./images/Embarcados.jpg" alt="Projeto Embarcado">
+        <h3>Embarcados C/C++</h3>
+        <p>Controle de hardware e automação.</p>
+      </div>
+    </div>
+
+  </div>  
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="contact">
+  <h2>Contato</h2>
+  <div class="form-container">
+    <form id="formContato">
+      <input type="text" name="nome" placeholder="Nome" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="telefone" placeholder="Telefone">
+      <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  <p id="status"></p>
+</section>
+
+<!-- BOTÃO VOLTAR AO TOPO -->
+<a href="#home" class="back-to-top">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</a>
+
+<!-- FOOTER FIXO -->
+<footer>
+  <p>© 2026 Paulo Lopes - Todos os direitos reservados</p>
+</footer>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
+</body>
+</html>
